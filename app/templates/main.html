@@ -4,5 +4,21 @@
     </head>
     <body>
         <h1>Calendar Working</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Start</th>
+                    <th>End</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for event in rows %}
+                <td>{{ row.name }}</td>
+                <td>{{ start_datetime.strftime('%H:%M') }}</td>
+                <td>{{ end_datetime.strftime('%H:%M') }}</td>
+                {% endfor %}
+            </tbody>
+        </table>
     </body>
 </html>

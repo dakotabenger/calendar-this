@@ -5,6 +5,7 @@
         "keycaps",
         "nish",
         "polya",
+        "psycopg",
         "pytest",
         "strptime",
         "vids",

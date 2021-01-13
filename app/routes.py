@@ -19,7 +19,9 @@ def main():
             curs.execute("""SELECT id,name,start_datetime, end_datetime
             FROM appointments
             ORDER BY start_datetime;""")
-            rows = curs.fetchone()
-            print(result)  # 'psycopg_test_use
+            rows = curs.fetchall()
+            print('!!!!!!!!!!______________!!!!!!!!!!')  # 'psycopg_test_use
+            print(rows)  # 'psycopg_test_use
+            print('!!!!!!!!!!______________!!!!!!!!!!')  # 'psycopg_test_use
 
     return render_template('main.html', rows=rows)
